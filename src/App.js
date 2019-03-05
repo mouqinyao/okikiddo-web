@@ -27,7 +27,7 @@ class App extends Component {
           </div>
           <div className="profile-group">
             <label className="group-title">园所切换: </label>
-            <select>
+            <select className="group-select">
               <option>欧可逗幼儿园</option>
               <option>欧可逗幼儿园2</option>
               <option>欧可逗幼儿园3</option>
@@ -56,7 +56,29 @@ class App extends Component {
             <img src={logo3} alt="okikiddo" className="footer-image"/>
           </div>
         </div>
-        <div className="right-content"></div>
+        <div className="center-content">
+          <div className="center-top-content">
+            <div className="status-card-container">
+              <h6 className="status-card-title">今日出勤</h6>
+              <div className="status-card-fill">content content content content content</div>
+              <div className="status-card-footer">dd</div>
+            </div>
+            <div className="status-card-container">
+              <h6 className="status-card-title">晨检异常</h6>
+              <div className="status-card-fill">content</div>
+              <div className="status-card-footer">cc</div>
+            </div>
+            <div className="status-card-container">
+              <h6 className="status-card-title">收支情况</h6>
+              <div className="status-card-fill">content</div>
+              <div className="status-card-footer"></div>
+            </div>
+          </div>
+          <div className="center-bottom-content">bottom content</div>
+        </div>
+        <div className="right-content">
+          calender
+        </div>
       </div>
     );
   }
