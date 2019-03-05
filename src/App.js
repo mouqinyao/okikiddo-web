@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SimplePieChart } from "./SimplePieChart";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faColumns, faIgloo, faYenSign, faCog } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
@@ -60,7 +61,9 @@ class App extends Component {
           <div className="center-top-content">
             <div className="status-card-container">
               <p className="status-card-title">今日出勤</p>
-              <div className="status-card-fill">content content content content content</div>
+              <div className="status-card-fill">
+                <SimplePieChart />
+              </div>
               <div className="status-card-footer">
                 <div className="card-footer-row">
                   <div className="card-footer-left">
