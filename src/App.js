@@ -59,19 +59,72 @@ class App extends Component {
         <div className="center-content">
           <div className="center-top-content">
             <div className="status-card-container">
-              <h6 className="status-card-title">今日出勤</h6>
+              <p className="status-card-title">今日出勤</p>
               <div className="status-card-fill">content content content content content</div>
-              <div className="status-card-footer">dd</div>
+              <div className="status-card-footer">
+                <div className="card-footer-row">
+                  <div className="card-footer-left">
+                    <span>到校</span>
+                    <span><span className="card-footer-number">146</span>人</span>
+                  </div>
+                  <div className="card-footer-right">
+                    <span>迟到</span>
+                    <span><span className="card-footer-number">20</span>人</span>
+                  </div>
+                </div>
+                <div className="card-footer-row">
+                  <div className="card-footer-left">
+                    <span>请假</span>
+                    <span><span className="card-footer-number">25</span>人</span>
+                  </div>
+                  <div className="card-footer-right">
+                    <span>未知</span>
+                    <span><span className="card-footer-number">4</span>人</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="status-card-container">
-              <h6 className="status-card-title">晨检异常</h6>
-              <div className="status-card-fill">content</div>
-              <div className="status-card-footer">cc</div>
+              <p className="status-card-title">晨检异常</p>
+              <div className="status-card-fill card-report-section">
+                <label>2</label>
+                <span>人</span>
+              </div>
+              <div className="status-card-footer">
+                <div className="card-footer-row">
+                  <div className="card-footer-left">
+                    <span>大1班</span>
+                    <span>李小明</span>
+                  </div>
+                  <div className="card-footer-right">38.9C</div>
+                </div>
+                <div className="card-footer-row">
+                  <div className="card-footer-left">
+                    <span>小2班</span>
+                    <span>张小小</span>
+                  </div>
+                  <div className="card-footer-right">29.9C</div>
+                </div>
+              </div>
             </div>
             <div className="status-card-container">
-              <h6 className="status-card-title">收支情况</h6>
-              <div className="status-card-fill">content</div>
-              <div className="status-card-footer"></div>
+              <p className="status-card-title">收支情况</p>
+              <div className="status-card-fill">
+              </div>
+              <div className="status-card-footer">
+                <div className="card-footer-row">
+                    <div className="card-footer-left">
+                      <span>收入：</span>
+                    </div>
+                  <div className="card-footer-right">$320,106</div>
+                </div>
+                <div className="card-footer-row">
+                  <div className="card-footer-left">
+                    <span>支出：</span>
+                  </div>
+                  <div className="card-footer-right">$210,306</div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="center-bottom-content">bottom content</div>
