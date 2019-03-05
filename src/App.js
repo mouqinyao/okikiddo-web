@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faColumns, faIgloo, faYenSign, faCog } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
 import logo2 from './images/logo2.svg';
+import logo3 from './images/logo3.svg';
 import profileIcon from './images/profile.svg';
 import './App.scss';
 
@@ -32,10 +35,25 @@ class App extends Component {
             </select>
           </div>
           <div className="nav-links">
-            <div className="nav-link active">控制台</div>
-            <div className="nav-link">幼园管理</div>
-            <div className="nav-link">财务管理</div>
-            <div className="nav-link">设置</div>
+            <div className="nav-link active">
+              <FontAwesomeIcon icon={faColumns} />
+              <span className="nav-link-text">控制台</span>
+            </div>
+            <div className="nav-link">
+              <FontAwesomeIcon icon={faIgloo} />              
+              <span className="nav-link-text">幼园管理</span>
+            </div>
+            <div className="nav-link">
+              <FontAwesomeIcon icon={faYenSign} />
+              <span className="nav-link-text">财务管理</span>
+            </div>
+            <div className="nav-link">
+              <FontAwesomeIcon icon={faCog} />
+              <span className="nav-link-text">设置</span>
+            </div>
+          </div>
+          <div className="footer">
+            <img src={logo3} alt="okikiddo" className="footer-image"/>
           </div>
         </div>
         <div className="right-content"></div>
