@@ -230,19 +230,19 @@ class App extends Component {
               />
             </div>
             <div className="events-container">
-              <div className="event-panel">
+              <div className="event-panel orange">
                 <div className="event-date">2019/02/01 - 2019/02/13</div>
                 <div className="event-title">事项名称</div>
                 <div className="event-time">10:30AM - 11:00AM</div>
                 <div className="event-participant">发布对象：全校老师，全校家长</div>
               </div>
-              <div className="event-panel">
+              <div className="event-panel red">
                 <div className="event-date">2019/02/14</div>
                 <div className="event-title">事项名称</div>
                 <div className="event-time">14:30AM - 15:00PM</div>
                 <div className="event-participant">参与人：A, B, C, D, +8</div>
               </div>
-              <div className="event-panel">
+              <div className="event-panel blue">
                 <div className="event-date">2019/02/23 - 2019/02/25</div>
                 <div className="event-title">事项名称</div>
                 <div className="event-time">10:30AM - 11:00AM</div>
