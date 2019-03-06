@@ -233,6 +233,68 @@ $fontColor : #666666;
   right: 290px;
   bottom: 0;
   background-color: #ffffff;
+
+  .school-track-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: $fontColor;
+  }
+
+  .school-track-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    color: $fontColor;
+  }
+
+  .school-track-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .school-track-bar {
+      width: 15px;
+      height: 200px;
+
+      .school-track-section {
+        display: inline-block;
+        height: 50px;
+        width: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        &.one {
+          background-color: #666666;
+        }
+
+        &.two {
+          background-color: #ffb626;
+        }
+
+        &.three {
+          background-color: #add8ed;
+        }
+
+        &.four {
+          background-color: #15a7f7;
+        }
+      }
+    }
+
+    .school-track-class {
+      margin: 20px 0 5px;
+      font-size: 12px;
+    }
+
+    .school-track-profile-icon {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }
 
 .right-content {

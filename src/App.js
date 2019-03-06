@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SimplePieChart } from "./SimplePieChart";
 import Calendar from 'react-calendar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faColumns, faIgloo, faYenSign, faCog } from '@fortawesome/free-solid-svg-icons'
+import { faColumns, faIgloo, faYenSign, faCog, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
 import logo2 from './images/logo2.svg';
 import logo3 from './images/logo3.svg';
@@ -143,7 +143,59 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="center-bottom-content">bottom content</div>
+          <div className="center-bottom-content">
+            <p className="school-track-title">今日出勤</p>
+            <div className="school-track-content">
+              <div className="school-track-single">
+                <div className="school-track-bar">
+                  <span className="school-track-section one"></span>
+                  <span className="school-track-section two"></span>
+                  <span className="school-track-section three"></span>
+                  <span className="school-track-section four"></span>
+                </div>
+                <div className="school-track-class">学前一班</div>
+                <div className="school-track-profile-icon">
+                  <FontAwesomeIcon icon={faUserCircle} />
+                </div>
+              </div>
+              <div className="school-track-single">
+                <div className="school-track-bar">
+                  <span className="school-track-section one"></span>
+                  <span className="school-track-section two"></span>
+                  <span className="school-track-section three"></span>
+                  <span className="school-track-section four"></span>
+                </div>
+                <div className="school-track-class">学前二班</div>
+                <div className="school-track-profile-icon">
+                  <FontAwesomeIcon icon={faUserCircle} />
+                </div>
+              </div>
+              <div className="school-track-single">
+                <div className="school-track-bar">
+                  <span className="school-track-section one"></span>
+                  <span className="school-track-section two"></span>
+                  <span className="school-track-section three"></span>
+                  <span className="school-track-section four"></span>
+                </div>
+                <div className="school-track-class">大1班</div>
+                <div className="school-track-profile-icon">
+                  <FontAwesomeIcon icon={faUserCircle} />
+                </div>
+              </div>
+              <div className="school-track-single">
+                <div className="school-track-bar">
+                  <span className="school-track-section one"></span>
+                  <span className="school-track-section two"></span>
+                  <span className="school-track-section three"></span>
+                  <span className="school-track-section four"></span>
+                </div>
+                <div className="school-track-class">大2班</div>
+                <div className="school-track-profile-icon">
+                  <FontAwesomeIcon icon={faUserCircle} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="right-content">
           <Calendar
