@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { SimplePieChart } from "./SimplePieChart";
+import Calendar from 'react-calendar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faColumns, faIgloo, faYenSign, faCog } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
@@ -145,7 +146,10 @@ class App extends Component {
           <div className="center-bottom-content">bottom content</div>
         </div>
         <div className="right-content">
-          calender
+          <Calendar
+            value={new Date()}
+            locale="zh-CN"
+          />
         </div>
       </div>
     );
