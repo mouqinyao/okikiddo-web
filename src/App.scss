@@ -153,15 +153,18 @@ $fontColor : #666666;
     }
 
     .status-card-footer {
-      padding: 20px;
+      padding: 20px 10px;
 
       .card-footer-row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 5px;
         color: $fontColor;
 
         .card-footer-left {
+          display: flex;
+          align-items: center;
           font-size: 12px;
 
           span {
@@ -170,10 +173,52 @@ $fontColor : #666666;
         }
 
         .card-footer-right {
+          display: flex;
+          align-items: center;
           font-size: 12px;
         }
 
+        .card-footer-general {
+          display: flex;
+          flex-basis: 48%;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 12px;
+
+          .card-status-label {
+          }
+
+          .card-footer-number-block {
+
+          }
+        }
+
+        .card-status-block {
+          display: inline-block;
+          margin-right: 5px;
+          height: 12px;
+          width: 12px;
+          
+          &.darkBlue {
+            background-color: #15a7f7;
+          }
+
+          &.lightBlue {
+            background-color: #add8ed;
+          }
+
+          &.orange {
+            background-color: #ffb626;
+          }
+
+          &.gray {
+            background-color: #666666;
+          }
+        }
+
         .card-footer-number {
+          display: inline-block;
+          margin-left: 10px;
           font-size: 16px;
           font-weight: 600;
         }

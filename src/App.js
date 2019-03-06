@@ -66,23 +66,33 @@ class App extends Component {
               </div>
               <div className="status-card-footer">
                 <div className="card-footer-row">
-                  <div className="card-footer-left">
-                    <span>到校</span>
-                    <span><span className="card-footer-number">146</span>人</span>
+                  <div className="card-footer-general">
+                    <div className="card-status-label">
+                      <span className="card-status-block darkBlue"></span>
+                      <span>到校</span>
+                    </div>
+                    <div className="card-footer-number-block"><span className="card-footer-number">146</span>人</div>
                   </div>
-                  <div className="card-footer-right">
-                    <span>迟到</span>
-                    <span><span className="card-footer-number">20</span>人</span>
+                  <div className="card-footer-general">
+                    <div className="card-status-label">
+                      <span className="card-status-block lightBlue"></span>
+                      <span>迟到</span>
+                    </div>
+                    <div className="card-footer-number-block"><span className="card-footer-number">20</span>人</div>
                   </div>
-                </div>
-                <div className="card-footer-row">
-                  <div className="card-footer-left">
-                    <span>请假</span>
-                    <span><span className="card-footer-number">25</span>人</span>
+                  <div className="card-footer-general">
+                    <div className="card-status-label">
+                      <span className="card-status-block orange"></span>
+                      <span>请假</span>
+                    </div>
+                    <div className="card-footer-number-block"><span className="card-footer-number">25</span>人</div>
                   </div>
-                  <div className="card-footer-right">
-                    <span>未知</span>
-                    <span><span className="card-footer-number">4</span>人</span>
+                  <div className="card-footer-general">
+                    <div className="card-status-label">
+                      <span className="card-status-block gray"></span> 
+                      <span>未知</span>
+                    </div>
+                    <div className="card-footer-number-block"><span className="card-footer-number">4</span>人</div>
                   </div>
                 </div>
               </div>
