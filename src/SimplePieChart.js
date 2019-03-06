@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as d3 from "d3";
 
-const data = [1, 2, 3, 4];
+const data = [146, 20, 25, 4];
 
 export const SimplePieChart = () => {
-  const height = 200;
-  const width = 200;
+  const height = 100;
+  const width = 100;
 
   let pie = d3.pie()(data);
 
@@ -23,14 +23,14 @@ const Slice = props => {
 
   let arc = d3
     .arc()
-    .innerRadius(0)
-    .outerRadius(100);
+    .innerRadius(30)
+    .outerRadius(50);
 
-  let interpolate = d3.interpolateRgb("#eaaf79", "#bc3358");
+  let colors = ['#15a7f7', '#add8ed', '#ffb626', '#666666'];
 
   return pie.map((slice, index) => {
-    let sliceColor = interpolate(index / (pie.length - 1));
+    let sliceColor = colors[index];
 
-    return <path d={arc(slice)} fill={sliceColor} />;
+    return <path key={index} d={arc(slice)} fill={sliceColor} />;
   });
 };

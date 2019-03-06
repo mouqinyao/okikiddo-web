@@ -90,8 +90,10 @@ class App extends Component {
             <div className="status-card-container">
               <p className="status-card-title">晨检异常</p>
               <div className="status-card-fill card-report-section">
-                <label>2</label>
-                <span>人</span>
+                <div>
+                  <label>2</label>
+                  <span>人</span>
+                </div>
               </div>
               <div className="status-card-footer">
                 <div className="card-footer-row">
