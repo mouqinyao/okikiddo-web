@@ -1,0 +1,36 @@
+.manage-columns {
+    display: flex;
+}
+
+.manage-board {
+    flex-basis: 30%;
+}
+
+.manage-role {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .button {
+        padding: 10px 30px;
+        border: none;
+        background-color: #ffffff;
+
+        &.student {
+            color: #ffffff;
+            background-color: #ffb626;
+        }
+
+        &.teacher {
+            color: #666666;
+        }
+
+        &.course {
+            color: #666666;
+        }
+    }
+}
+
+.manage-detail {
+    flex-basis: 70%;
+}
