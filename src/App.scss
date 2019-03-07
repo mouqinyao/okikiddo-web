@@ -1,7 +1,11 @@
-$break-point: 1260px;
+$break-point: 1220px;
 $fontColor : #666666;
 
-.dashboard-container {}
+.dashboard-container {
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
 
 .left-content {
   position: fixed;
@@ -9,6 +13,8 @@ $fontColor : #666666;
   left: 0;
   bottom: 0;
   width: 230px;
+  height: 100%;
+  max-height: 100%;
   color: $fontColor;
   background-color: #f2f2f2;
   box-shadow: 5px 0 5px -5px $fontColor;
@@ -103,21 +109,11 @@ $fontColor : #666666;
   }
 }
 
-.center-content {
-  position: absolute;
-  padding-right: 270px;
-  left: 233px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f2f2f2;
-}
-
 .center-top-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 30px 20px 20px;
+  margin: 30px;
 
   .status-card-container {
     display: flex;
@@ -137,7 +133,7 @@ $fontColor : #666666;
       flex: 1 1 auto;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 20px;
     }
 
     .card-report-section {
@@ -228,10 +224,7 @@ $fontColor : #666666;
 }
 
 .center-bottom-content {
-  position: absolute;
-  left: 20px;
-  right: 290px;
-  bottom: 0;
+  margin: 30px;
   background-color: #ffffff;
 
   .school-track-title {
@@ -295,14 +288,88 @@ $fontColor : #666666;
   }
 }
 
-.right-content {
+.dashboard-content {
   position: fixed;
-  top: 30px;
-  right: 20px;
-  bottom: 0;
-  width: 250px;
+  left: 232px;
+  width: calc(100% - 232px);
   height: 100%;
-  background-color: #ffffff;
+  max-height: 100%;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+
+  .center-content {
+    padding-right: 292px;
+  }
+  
+  .right-content {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: 30px 30px 0 0;
+    width: 262px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.calendar-container {
+  .react-calendar {
+    border: none;
+  }
+}
+
+.events-container {
+  padding: 10px;
+
+  .event-panel {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 0.5px solid $fontColor;
+
+    &.orange:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      height: 50px;
+      border-left: 3px solid #ffb626;
+    }
+
+    &.red:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      height: 4px;
+      border-left: 3px solid red;
+    }
+
+    &.blue:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      height: 50px;
+      border-left: 3px solid #15a7f7;
+    }
+
+    .event-date {
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .event-title {
+      font-size: 14px;
+    }
+
+    .event-time {
+      margin-top: 2px;
+      margin-bottom: 6px;
+      font-size: 10px;
+    }
+
+    .event-participant {
+      font-size: 12px;
+    }
+  }
 }
 
 @media screen and (max-width: $break-point) {
@@ -310,7 +377,7 @@ $fontColor : #666666;
     flex-direction: column;
 
     .status-card-container {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
 }
