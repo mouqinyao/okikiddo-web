@@ -5,7 +5,7 @@ $boxShadow: 0 0 5px #666666;
 }
 
 .manage-board {
-    flex-basis: 30%;
+    flex-basis: 40%;
 }
 
 .manage-role {
@@ -75,6 +75,96 @@ $boxShadow: 0 0 5px #666666;
     }
 }
 
+.class-general {
+    margin: 0 20px 20px;
+
+    .class-label {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #666666;
+    }
+
+    .class-profile-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .class-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 29%;
+            margin: 2%;
+            font-size: 12px;
+            color: #666666;
+            background-color: #ffffff;
+            box-shadow: $boxShadow;
+
+            &.add-class {
+                position: relative;
+                box-shadow: none;
+                color: #ffffff;
+                background-color: transparent;
+
+                .class-add-button {
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 15px;
+                    background-color: #ffb626;
+
+                    .class-title {
+                        margin-bottom: 10px;
+                        padding: 0;
+                    }
+
+                    svg {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .class-title {
+                padding-top: 10px;
+            }
+
+            .class-people {
+                display: inline-block;
+                padding: 15px 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .manage-detail {
-    flex-basis: 70%;
+    flex-basis: 60%;
+}
+
+.student-summary {
+    display: flex;
+    padding: 0 20px 20px;
+
+    .student-category {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 15px;
+        padding: 10px;
+        color: #666666;
+        background-color: #ffffff;
+        box-shadow: $boxShadow;
+
+        label {
+            font-size: 12px;
+        }
+
+        svg {
+            padding: 8px 30px;
+            font-size: 20px;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faColumns, faIgloo, faYenSign, faCog, faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faColumns, faIgloo, faYenSign, faCog, faUserGraduate, faUserCog, faPlus } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
 import logo2 from './images/logo2.svg';
 import logo3 from './images/logo3.svg';
@@ -65,7 +65,6 @@ class App extends Component {
                 </div>
                 <div className="manage-general">
                   <div className="people-title">学生人数</div>
-                    
                   <div className="manage-people">
                     <div className="people-label">
                       <span className="people-number">123</span>
@@ -81,12 +80,77 @@ class App extends Component {
                         <div>62人</div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div className="class-general">
+                  <label className="class-label">班级概况</label>
+                  <div className="class-profile-content">
+                    <div className="class-profile add-class">
+                      <div className="class-add-button">
+                        <div className="class-title">创建班级</div>
+                        <FontAwesomeIcon icon={faPlus} />
+                      </div>
                     </div>
+                    <div className="class-profile">
+                      <div className="class-title">学前1班</div>
+                      <div><span className="class-people">16</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">学前2班</div>
+                      <div><span className="class-people">16</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">大1班</div>
+                      <div><span className="class-people">16</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">大2班</div>
+                      <div><span className="class-people">15</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">中1班</div>
+                      <div><span className="class-people">14</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">中2班</div>
+                      <div><span className="class-people">12</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">小1班</div>
+                      <div><span className="class-people">9</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">小2班</div>
+                      <div><span className="class-people">8</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">小小1班</div>
+                      <div><span className="class-people">9</span>人</div>
+                    </div>
+                    <div className="class-profile">
+                      <div className="class-title">小小2班</div>
+                      <div><span className="class-people">8</span>人</div>
+                    </div>
+                  </div>
                 </div>
             </div>
             <div className="manage-detail">
                 <div className="manage-role">
                     <button className="button course">课程管理</button>
+                </div>
+                <div className="student-summary">
+                  <div className="student-category">
+                    <label>入学新生</label>
+                    <FontAwesomeIcon icon={faUserCog} />
+                  </div>
+                  <div className="student-category">
+                    <label>毕业学生</label>
+                    <FontAwesomeIcon icon={faUserGraduate} />
+                  </div>
+                  <div className="student-category">
+                    <label>离校学生</label>
+                    <FontAwesomeIcon icon={faUserGraduate} />
+                  </div>
                 </div>
             </div>
         </div>
