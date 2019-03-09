@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faColumns, faIgloo, faYenSign, faCog, faUserGraduate, faUserCog, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faColumns, faIgloo, faYenSign, faCog, faUserGraduate, faUserCog, faPlus, faUser, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import logo1 from './images/logo1.svg';
 import logo2 from './images/logo2.svg';
 import logo3 from './images/logo3.svg';
@@ -150,6 +150,71 @@ class App extends Component {
                   <div className="student-category">
                     <label>离校学生</label>
                     <FontAwesomeIcon icon={faUserGraduate} />
+                  </div>
+                </div>
+                <div className="class-detail">
+                  <label className="class-title">班级概况</label>
+                  <div className="class-detail-row">
+                    <div className="class-detail-profile add-student">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </div>
+                      <div className="class-student">新增学生</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
+                    <div className="class-detail-profile">
+                      <div className="class-user">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                      </div>
+                      <div className="class-student">王小五</div>
+                    </div>
                   </div>
                 </div>
             </div>
