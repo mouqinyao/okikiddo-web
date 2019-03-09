@@ -5,6 +5,8 @@ import logo1 from './images/logo1.svg';
 import logo2 from './images/logo2.svg';
 import logo3 from './images/logo3.svg';
 import profileIcon from './images/profile.svg';
+import girlIcon from './images/girl.png';
+import boyIcon from './images/boy.png';
 import './App.scss';
 import './App2.scss';
 
@@ -72,11 +74,17 @@ class App extends Component {
                     </div>
                     <div className="manage-people-detail">
                       <div className="manage-people-gender">
-                        <div>男生：</div>
+                        <div className="people-by-gender">
+                          <img src={boyIcon} alt="boy" className="gender-icon"/>
+                          <span>男生：</span>
+                        </div>
                         <div>61人</div>
                       </div>
                       <div className="manage-people-gender">
-                        <div>女生：</div>
+                        <div className="people-by-gender">
+                          <img src={girlIcon} alt="girl" className="gender-icon"/>
+                          <span>女生：</span>
+                        </div>
                         <div>62人</div>
                       </div>
                     </div>
@@ -170,12 +178,14 @@ class App extends Component {
                     <div className="class-detail-profile">
                       <div className="class-user">
                         <FontAwesomeIcon icon={faUserCircle} />
+                        <img src={boyIcon} alt="boy" className="user-gender-icon"/>
                       </div>
                       <div className="class-student">王小五</div>
                     </div>
                     <div className="class-detail-profile">
                       <div className="class-user">
                         <FontAwesomeIcon icon={faUserCircle} />
+                        <img src={girlIcon} alt="girl" className="user-gender-icon"/>
                       </div>
                       <div className="class-student">王小五</div>
                     </div>

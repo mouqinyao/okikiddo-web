@@ -126,7 +126,11 @@ class App extends Component {
               </div>
               <div className="status-card-container">
                 <p className="status-card-title">收支情况</p>
-                <div className="status-card-fill">
+                <div className="status-card-fill balance-summary">
+                  <div className="status-balance">
+                    <div className="balance-label">结余:</div>
+                    <div className="balance-amount">$111,000</div>
+                  </div>
                 </div>
                 <div className="status-card-footer">
                   <div className="card-footer-row">

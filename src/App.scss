@@ -134,6 +134,29 @@ $fontColor : #666666;
       justify-content: center;
       align-items: center;
       padding: 20px;
+
+      &.balance-summary {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+
+    .status-balance {
+      display: flex;
+      flex-direction: column;
+
+      .balance-label {
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #666666;
+      }
+
+      .balance-amount {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: lightblue;
+      }
     }
 
     .card-report-section {
@@ -179,14 +202,11 @@ $fontColor : #666666;
           flex-basis: 48%;
           align-items: center;
           justify-content: space-between;
-          font-size: 12px;
+          font-size: 10px;
 
-          .card-status-label {
-          }
+          .card-status-label {}
 
-          .card-footer-number-block {
-
-          }
+          .card-footer-number-block {}
         }
 
         .card-status-block {
@@ -215,7 +235,7 @@ $fontColor : #666666;
         .card-footer-number {
           display: inline-block;
           margin-left: 10px;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
         }
       }

@@ -69,7 +69,20 @@ $boxShadow: 0 0 5px #666666;
     
             .manage-people-gender {
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
+
+                .people-by-gender {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }
+
+                .gender-icon {
+                    margin-right: 2px;
+                    width: 15px;
+                    height: 15px;
+                }
             }
         }
     }
@@ -218,10 +231,18 @@ $boxShadow: 0 0 5px #666666;
             }
 
             .class-user {
+                position: relative;
                 padding: 10px 0;
 
                 svg {
                     font-size: 26px;
+                }
+
+                .user-gender-icon {
+                    position: absolute;
+                    top: 15px;
+                    width: 15px;
+                    height: 15px;
                 }
             }
 
