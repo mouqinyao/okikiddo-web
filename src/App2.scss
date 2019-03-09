@@ -60,31 +60,6 @@ $boxShadow: 0 0 5px #666666;
                 font-size: 30px;
             }
         }
-
-        .manage-people-detail {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 50%;
-            font-size: 12px;
-    
-            .manage-people-gender {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .people-by-gender {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 5px;
-                }
-
-                .gender-icon {
-                    margin-right: 2px;
-                    width: 15px;
-                    height: 15px;
-                }
-            }
-        }
     }
 }
 
@@ -126,6 +101,7 @@ $boxShadow: 0 0 5px #666666;
                     flex-direction: column;
                     align-items: center;
                     padding: 10px 15px;
+                    box-shadow: $boxShadow;
                     background-color: #ffb626;
 
                     .class-title {
@@ -176,7 +152,7 @@ $boxShadow: 0 0 5px #666666;
         }
 
         svg {
-            padding: 8px 30px;
+            padding: 10px 30px;
             font-size: 20px;
         }
     }
@@ -190,6 +166,65 @@ $boxShadow: 0 0 5px #666666;
     .class-title {
         font-size: 12px;
         color: #666666;
+    }
+
+    .class-summary {
+        display: flex;
+        align-items: center;
+        padding: 25px 0;
+
+        .class-summary-panel {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 14%;
+            margin: 1%;
+            align-items: center;
+            color: #666666;
+
+            &.label {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            &.user-icon {
+                svg {
+                    font-size: 30px;
+                }
+            }
+
+            .teacher {
+                font-size: 12px;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            &.row {
+                flex-direction: row;
+            }
+
+            &.last {
+                display: flex;
+                align-items: flex-end;
+                flex-basis: 28%;
+
+                .class-actions {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    svg {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .manage-people-detail {
+            flex-basis: 15%;
+        }
     }
 
     .class-detail-row {
@@ -239,6 +274,7 @@ $boxShadow: 0 0 5px #666666;
                 }
 
                 .user-gender-icon {
+                    margin-left: 2px;
                     position: absolute;
                     top: 15px;
                     width: 15px;
@@ -250,6 +286,31 @@ $boxShadow: 0 0 5px #666666;
                 padding-bottom: 10px;
                 font-size: 12px;
             }
+        }
+    }
+}
+
+.manage-people-detail {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 12px;
+
+    .manage-people-gender {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        .people-by-gender {
+            display: flex;
+            align-items: center;
+        }
+
+        .gender-icon {
+            margin-right: 2px;
+            width: 15px;
+            height: 15px;
         }
     }
 }

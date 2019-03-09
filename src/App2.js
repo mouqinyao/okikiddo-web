@@ -162,6 +162,42 @@ class App extends Component {
                 </div>
                 <div className="class-detail">
                   <label className="class-title">班级概况</label>
+                  <div className="class-summary">
+                    <div className="class-summary-panel label">大二班</div>
+                    <div className="class-summary-panel user-icon">
+                      <FontAwesomeIcon icon={faUserCircle} />
+                    </div>
+                    <div className="class-summary-panel">
+                      <div className="teacher">班主任</div>
+                      <div className="name">赵小水</div>
+                    </div>             
+                      <div className="manage-people-detail">
+                        <div className="manage-people-gender">
+                          <div className="people-by-gender">
+                            <img src={boyIcon} alt="boy" className="gender-icon"/>
+                            <span>男生：</span>
+                          </div>
+                          <div>61人</div>
+                        </div>
+                        <div className="manage-people-gender">
+                          <div className="people-by-gender">
+                            <img src={girlIcon} alt="girl" className="gender-icon"/>
+                            <span>女生：</span>
+                          </div>
+                          <div>62人</div>
+                        </div>
+                      </div>                    
+                    <div className="class-summary-panel last">
+                      <div className="class-actions">
+                        <FontAwesomeIcon icon={faCog} />
+                        <div>课程</div>
+                      </div>
+                      <div className="class-actions">
+                        <FontAwesomeIcon icon={faCog} />
+                        <div>设置</div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="class-detail-row">
                     <div className="class-detail-profile add-student">
                       <div className="class-user">

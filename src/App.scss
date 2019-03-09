@@ -1,5 +1,6 @@
 $break-point: 1220px;
 $fontColor : #666666;
+$boxShadow: 0 0 5px #666666;
 
 .dashboard-container {
   position: relative;
@@ -120,6 +121,7 @@ $fontColor : #666666;
     flex-direction: column;
     flex-basis: 30%;
     background-color: #ffffff;
+    box-shadow: $boxShadow;
 
     .status-card-title {
       margin: 0;
@@ -246,6 +248,7 @@ $fontColor : #666666;
 .center-bottom-content {
   margin: 30px;
   background-color: #ffffff;
+  box-shadow: $boxShadow;
 
   .school-track-title {
     margin: 0;
